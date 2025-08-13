@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact — Troglodyte Labs</title>
+        <meta
+            name="description"
+            content="Contact Troglodyte Labs. Collaborations, questions, and project inquiries."
+        />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-white text-black font-sans">
+        <header class="border-b border-gray-200">
+            <div
+                class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center"
+            >
+                <a href="/" class="text-xl font-bold hover:underline"
+                    >Troglodyte Labs</a
+                >
+                <nav class="space-x-4 text-sm">
+                    <a href="/projects.html" class="hover:underline"
+                        >Projects</a
+                    >
+                    <a href="/about.html" class="hover:underline">About</a>
+                    <a
+                        href="/contact.html"
+                        class="hover:underline font-semibold"
+                        >Contact</a
+                    >
+                </nav>
+            </div>
+        </header>
+
+        <main class="max-w-5xl mx-auto px-4 py-12">
+            <h1 class="text-3xl font-bold mb-6">Get in touch</h1>
+            <p class="mb-6">
+                Email is best. Tell me about your idea, constraints, and
+                timeline. If it’s a fit, I’ll suggest a quick call.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">Email</h2>
+                    <p class="mb-3">
+                        <a
+                            class="underline"
+                            href="mailto:hello@troglodytelabs.com"
+                            >hello@troglodytelabs.com</a
+                        >
+                    </p>
+                    <p class="text-sm text-gray-700">
+                        Tip: include a short brief (problem, audience, success
+                        metric). Links and screenshots help.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold mb-3">Elsewhere</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            GitHub —
+                            <a
+                                class="underline"
+                                href="https://github.com/ddyson1"
+                                target="_blank"
+                                rel="noopener"
+                                >github.com</a
+                            >
+                        </li>
+                        <li>
+                            Personal site —
+                            <a
+                                class="underline"
+                                href="https://devindyson.com"
+                                target="_blank"
+                                rel="noopener"
+                                >devindyson.com</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="mt-12">
+                <h2 class="text-xl font-semibold mb-3">Working together</h2>
+                <ul class="list-disc pl-5 space-y-2 text-sm">
+                    <li>Small, focused engagements (1–8 weeks)</li>
+                    <li>Direct communication, fast iteration</li>
+                    <li>Flat rate or milestone-based pricing</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer
+            class="max-w-5xl mx-auto px-4 py-6 border-t border-gray-200 text-sm text-gray-600"
+        >
+            © <span id="y"></span> Troglodyte Labs. All rights reserved.
+        </footer>
+
+        <script>
+            document.getElementById("y").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

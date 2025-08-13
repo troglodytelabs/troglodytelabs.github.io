@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Projects — Troglodyte Labs</title>
+        <meta
+            name="description"
+            content="Selected projects from Troglodyte Labs: Moodlog, Calstack, Plotflow, Labdog, and more."
+        />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-white text-black font-sans">
+        <header class="border-b border-gray-200">
+            <div
+                class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center"
+            >
+                <a href="/" class="text-xl font-bold hover:underline"
+                    >Troglodyte Labs</a
+                >
+                <nav class="space-x-4 text-sm">
+                    <a
+                        href="projects.html"
+                        class="hover:underline font-semibold"
+                        >Projects</a
+                    >
+                    <a href="about.html" class="hover:underline">About</a>
+                    <a href="contact.html" class="hover:underline">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="max-w-5xl mx-auto px-4 py-12">
+            <h1 class="text-3xl font-bold mb-6">Selected Projects</h1>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Moodlog -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://moodlog.io"
+                            target="_blank"
+                            rel="noopener"
+                            >Moodlog</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        DBT-focused mood tracking for clarity and habit change.
+                        Journaling, tagging, and weekly reports.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Django, Postgres, Tailwind
+                    </p>
+                </article>
+
+                <!-- Calstack -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://calstack.com"
+                            target="_blank"
+                            rel="noopener"
+                            >Calstack</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Cooperative scheduling: suggest meeting times across
+                        calendars with minimal back-and-forth.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Django, React, ICS, Google/Microsoft APIs
+                    </p>
+                </article>
+
+                <!-- Plotflow -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://plotflow.io"
+                            target="_blank"
+                            rel="noopener"
+                            >Plotflow</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Generative pen-plotter artwork. Originals, editions, and
+                        commissions made on AxiDraw.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Python, SVG, custom plotting pipelines
+                    </p>
+                </article>
+
+                <!-- Labdog -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://labdog.io"
+                            target="_blank"
+                            rel="noopener"
+                            >Labdog</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Friendly tooling for indie devs & teams. Small utilities
+                        that smooth workflow edges.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Python/TS, small services
+                    </p>
+                </article>
+
+                <!-- Personal site -->
+                <article class="border border-gray-200 p-5 md:col-span-2">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://devindyson.com"
+                            target="_blank"
+                            rel="noopener"
+                            >Devin Dyson</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Notes on research, writing, and engineering. Occasional
+                        essays, experiments, and changelogs.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Static site + lightweight tools
+                    </p>
+                </article>
+            </div>
+
+            <section class="mt-12">
+                <h2 class="text-xl font-semibold mb-3">In the lab</h2>
+                <p class="text-sm">
+                    New utilities and experiments ship occasionally. If you want
+                    early access, say hi.
+                </p>
+                <a
+                    href="contact.html"
+                    class="inline-block mt-4 px-4 py-2 border border-black hover:bg-black hover:text-white transition"
+                    >Get in touch</a
+                >
+            </section>
+        </main>
+
+        <footer
+            class="max-w-5xl mx-auto px-4 py-6 border-t border-gray-200 text-sm text-gray-600"
+        >
+            © <span id="y"></span> Troglodyte Labs. All rights reserved.
+        </footer>
+
+        <script>
+            document.getElementById("y").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
