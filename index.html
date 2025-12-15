@@ -23,7 +23,7 @@
                     <a href="index.html">Troglodyte Labs</a>
                 </h1>
                 <nav class="space-x-4 text-sm">
-                    <a href="assets/projects.html" class="hover:underline"
+                    <a href="index.html" class="hover:underline font-semibold"
                         >Projects</a
                     >
                     <a href="assets/about.html" class="hover:underline"
@@ -36,19 +36,124 @@
             </div>
         </header>
 
-        <section id="home" class="max-w-5xl mx-auto px-4 py-12">
-            <h2 class="text-3xl font-bold mb-4">Independent App Studio</h2>
-            <p class="mb-6">
-                Troglodyte Labs is an independent design & development studio
-                run by Devin Dyson. We build focused tools with personality —
-                small, sharp, and durable.
-            </p>
-            <a
-                href="assets/projects.html"
-                class="inline-block px-4 py-2 border border-black hover:bg-black hover:text-white transition"
-                >See projects</a
-            >
-        </section>
+        <main class="max-w-5xl mx-auto px-4 py-12">
+            <h1 class="text-3xl font-bold mb-6">Independent App Studio</h1>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Moodlog -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://moodlog.io"
+                            target="_blank"
+                            rel="noopener"
+                            >moodlog</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        DBT-focused mood tracking for clarity and habit change.
+                        Journaling, tagging, and weekly reports.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Flask, Postgres, Render
+                    </p>
+                </article>
+
+                <!-- Calstack -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://calstack.com"
+                            target="_blank"
+                            rel="noopener"
+                            >calstack</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Cooperative scheduling: suggest meeting times across
+                        calendars with minimal back-and-forth.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Flask, Twillio, ICS, Google/Microsoft APIs
+                    </p>
+                </article>
+
+                <!-- Plotflow -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://plotflow.io"
+                            target="_blank"
+                            rel="noopener"
+                            >plotflow</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Generative pen-plotter artwork. Originals, editions, and
+                        commissions made on AxiDraw.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Python, SVG, custom plotting
+                    </p>
+                </article>
+
+                <!-- Labdog -->
+                <article class="border border-gray-200 p-5">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://labdog.io"
+                            target="_blank"
+                            rel="noopener"
+                            >labdog</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Mentorship connection and consulting platform for
+                        researchers and academics.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Stack: Django, Python, small services
+                    </p>
+                </article>
+
+                <!-- Personal site -->
+                <article class="border border-gray-200 p-5 md:col-span-2">
+                    <h2 class="text-xl font-semibold">
+                        <a
+                            class="underline"
+                            href="https://devindyson.com"
+                            target="_blank"
+                            rel="noopener"
+                            >devindyson</a
+                        >
+                    </h2>
+                    <p class="text-sm mt-2">
+                        Notes on philosophy, writing, and life. Occasional
+                        experiments and ponderings as well.
+                    </p>
+                    <p class="text-xs text-gray-600 mt-3">
+                        Static site on GitHub Pages
+                    </p>
+                </article>
+            </div>
+
+            <section class="mt-12">
+                <h2 class="text-xl font-semibold mb-3">In the lab</h2>
+                <p class="text-sm">
+                    New utilities and experiments ship occasionally. If you want
+                    early access, say hi.
+                </p>
+                <a
+                    href="assets/contact.html"
+                    class="inline-block mt-4 px-4 py-2 border border-black hover:bg-black hover:text-white transition"
+                    >Get in touch</a
+                >
+            </section>
+        </main>
 
         <footer
             class="max-w-5xl mx-auto px-4 py-6 border-t border-gray-200 text-sm text-gray-600"
